@@ -13,6 +13,8 @@ Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/dashboard', [DashboardController::class, 'tought']);
 
+Route::post('/dashboard', [DashboardController::class, 'tought']);
+
 Route::get('/about', [AboutController::class, 'about']);
 
 Route::get('/category', [CategoryController::class, 'category']);
