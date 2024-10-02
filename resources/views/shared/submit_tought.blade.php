@@ -1,10 +1,11 @@
 <h4> Speak your mind </h4>
 <div class="row">
-    <form action="{{ url('/post') }}" method="POST">
+    <form action="{{ route('thought.create') }}" method="POST">
+        @csrf
         <div class="mb-3">
-            <textarea class="form-control" id="idea" rows="3"></textarea>
+            <textarea name="tought" class="form-control" id="idea" rows="3"></textarea>
         </div>
         <div class="">
-            <button class="btn btn-dark"> Share </button>
+            <button type="submit" class="btn btn-dark"> Share </button>
         </div>
     </form>
